@@ -112,6 +112,39 @@ h1 {
     cursor: pointer;
     z-index: 10;
 }
+    /* 📱 Mobile friendly layout */
+@media (max-width: 768px) {
+
+    .slideshow {
+        width: 160px;
+        height: 160px;
+        top: 20%;
+        transform: translateY(0);
+        box-shadow: 0 0 20px rgba(255,105,180,0.7);
+    }
+
+    .slideshow.left {
+        left: 10px;
+    }
+
+    .slideshow.right {
+        right: 10px;
+    }
+
+    .container {
+        padding-top: 220px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #message {
+        font-size: 1.05em;
+        max-width: 90%;
+    }
+}
+
 </style>
 </head>
 
@@ -269,3 +302,4 @@ animate();
 
 </body>
 </html>
+
